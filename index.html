@@ -11,7 +11,7 @@
         
         //ZAD1
         let imie = prompt("Podaj imię: ");
-        alert('Witaj', imie);
+        alert('Witaj' + imie);
 
         //ZAD2
         let liczba1 = parseFloat(prompt("Podaj pierwszą iczbę:"));
@@ -34,7 +34,7 @@
             default:
                 alert("Nieprawidłowy wybór operacji.");
         }
-        alert("Wynik: ${wynik}");
+        alert("Wynik: " + wynik);
 
         //ZAD3
         let wzrost = parseFloat(prompt("Podaj swój wzrost w cm: "));
@@ -71,11 +71,11 @@
         let wynikk;
         if(wybor === 1){
             wynikk = (temperatura * 9/5) + 32;
-            alert('Temperatura w Fahrenheitach: ${wynikk} stopni F');
+            alert('Temperatura w Fahrenheitach: " + wynikk + "stopni F');
         }
         else if(wybor === 2){
             wynikk = (temperatura - 32) * 5/9;
-            alert('Temperatura w stopniach Celsjusza: ${wynikk} stopni Celsjusza');
+            alert('Temperatura w stopniach Celsjusza: " + wynikk + "stopni Celsjusza');
         }
         else{
             alert("Nieprawidłowy wybór.");
